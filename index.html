@@ -12,12 +12,22 @@
             overflow: hidden;
         }
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* fills screen */
-            display: block;
-        }
+    .background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.door {
+    position: absolute;
+    left: 2340px;
+    top: 1110px;
+    width: 200px;
+    height: 350px;
+    z-index: 999;
+    cursor: pointer;
+}
 
         #secret-box {
   position: absolute;
@@ -39,10 +49,10 @@
     </style>
 </head>
 <body>
-    <img src="Doors.png" alt="">
+  <img src="Doors.png" alt="" class="background">
 
-    <a href="key.html">
-  <img src="opendoor.png" alt="Open Door">
+<a href="key.html">
+  <img src="opendoor.png" alt="Open Door" class="door">
 </a>
 
     <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "59e7a616b2324d1498411e289f6de86c"}'></script><!-- End Cloudflare Web Analytics -->
